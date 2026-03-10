@@ -1,51 +1,72 @@
+# =========================
 # macOS
+# =========================
 .DS_Store
 
-# Node
+# =========================
+# Node / JS
+# =========================
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+*.log
 
-# Environment files
+# =========================
+# Environment
+# =========================
 .env
 .env.*
 
-# React Native packager
+# =========================
+# Metro Bundler
+# =========================
 .metro-health-check*
+.expo/
+.expo-shared/
 
-# Logs
-logs
-*.log
-
+# =========================
 # Temporary files
+# =========================
 *.tmp
 *.temp
 
+# =========================
 # Android
+# =========================
 android/.gradle/
-android/app/build/
 android/build/
+android/app/build/
 android/local.properties
+android/.cxx/
+android/app/.cxx/
+
+# Signing files
 *.keystore
 *.jks
 
+# =========================
 # iOS
+# =========================
 ios/build/
-ios/Pods/
 ios/DerivedData/
-*.xcworkspace
+ios/Pods/
 
 # Xcode
-xcuserdata/
 *.xcuserstate
+xcuserdata/
 *.xcscmblueprint
 
+# =========================
 # IDE
+# =========================
 .vscode/
 .idea/
 
-# Coverage
+# =========================
+# Testing / Coverage
+# =========================
 coverage/
-
-# Typescript
+jest/
 *.tsbuildinfo
